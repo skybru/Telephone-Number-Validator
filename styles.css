@@ -1,0 +1,89 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px auto;
+    color: #fff;
+    max-width: 500px;
+}
+
+#container {
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    border: 1px solid white
+}
+
+#telephone-outer {
+    width: 300px;
+    height: 100%;
+    border: 10px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+}
+
+#camera{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 45%);
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.button {
+    position: static;
+    padding: 5px 30px;
+    margin: auto 10px;
+    font-size: 20px;
+    background: linear-gradient(lightgray, rgb(128, 128, 128));
+}
+
+#telephone-screen {
+    width: 270px;
+    height: 420px;
+    margin: 40px auto 20px auto;
+    background-color: lightgray;
+    text-align: center;
+}
+
+label {
+    margin: 10px auto 5px;
+}
+
+#user-input {
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#results-div {
+    height: 340px;
+    border: 4px solid lightgray;
+}
+
+#telephone-button {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
