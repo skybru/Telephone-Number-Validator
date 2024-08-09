@@ -13,6 +13,6 @@ checkBtn.addEventListener("click", () => {
         return;
     }
 
-    result.textContent = isValid(usrInput.value) ? `Valid US number: ${usrInput.value}` : `Invalid US number: ${usrInput.value}`;
+    result.innerHTML += isValid(usrInput.value) ? `<p class="result">Valid US number: ${usrInput.value}</p>` : `<p class="result">Invalid US number: ${usrInput.value}</p>`;
     usrInput.value = "";
 });

@@ -79,10 +79,15 @@ label {
 #results-div {
     height: 340px;
     border: 4px solid lightgray;
+    overflow-y: auto;
 }
 
 #telephone-button {
     display: flex;
     flex-direction: row;
     margin: 0px auto;
+}
+
+.result {
+    margin: 10px auto;
 }
