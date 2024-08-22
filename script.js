@@ -3,7 +3,7 @@ const result = document.getElementById("results-div");
 const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 
-const numberRegex = /^[1]?\s?(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)?\d{4}$/;
+const numberRegex = /^[1]?\s?(\((?=.*\)))?\d{3}((?<=(\()\d{3})\))?(-|\s)?\d{3}(-|\s)?\d{4}$/;
 
 const isValid = (number) => numberRegex.test(number);
 
